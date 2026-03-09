@@ -1,5 +1,6 @@
-# NWM – Real-time Data Tracking & Monitoring
+# Real-time Data Tracking & Monitoring System
 실시간 데이터 자동 집계·정합 및 상태 모니터링 Web 시스템
+Spring Boot + React 기반 실시간 데이터 집계 및 모니터링 시스템
 
 ## 배경
 
@@ -20,6 +21,18 @@ LOT 입력이 지연되거나 누락되면 **이력에 공백**이 생기는 문
 
 ---
 
+## Architecture
+
+External Device Data
+      ↓
+SQL Server (Stored Procedure – Data Aggregation)
+      ↓
+Spring Boot API Server
+      ↓
+React Web Client
+
+---
+
 ## 담당 업무
 - 카운트 기반 **자동 집계 구조 설계**
 - **업무일자 기준(06:30)** 집계·정합 로직 정의
@@ -30,7 +43,7 @@ LOT 입력이 지연되거나 누락되면 **이력에 공백**이 생기는 문
 
 ---
 
-## 설계 포인트
+## Key Design
 
 ### 1. 시간 스트림 기반 매칭
 - 이벤트를 **시간순(ROW_NUMBER)** 으로 정렬
