@@ -26,7 +26,7 @@ LOT 입력이 지연되거나 누락되면 **이력에 공백**이 생기는 문
 ```
 External Device Data
         ↓
-SQL Server(Stored Procedure – Data Aggregation)
+SQL Server (Stored Procedure – Data Aggregation)
         ↓
 Spring Boot API Server
         ↓
@@ -73,7 +73,7 @@ React Web Client
 
 ## Screenshots
 
-### 빌렛 Tracking – 회수율 관리
+### Data Tracking – Recovery Rate Analysis
 실제 설비에서 측정한 빌렛 트래킹 데이터와 실제 빌렛 정보(중량/길이)를 매핑하여 회수율을 산출하는 화면
 
 ![빌렛 Tracking 회수율 관리](./screenshots/billet-tracking.png)
