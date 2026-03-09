@@ -23,6 +23,7 @@ LOT 입력이 지연되거나 누락되면 **이력에 공백**이 생기는 문
 
 ## Architecture
 
+```
 External Device Data
 ↓
 SQL Server (Stored Procedure – Data Aggregation)
@@ -30,6 +31,8 @@ SQL Server (Stored Procedure – Data Aggregation)
 Spring Boot API Server
 ↓
 React Web Client
+```
+
 
 ---
 
